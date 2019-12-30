@@ -259,12 +259,6 @@
     <shortcut fVirt="3" accleleratorKey="90" actionID="40030" actionTableID="2077580866" />
     <shortcut fVirt="3" accleleratorKey="80" actionID="40601" actionTableID="7" />
     <shortcut fVirt="3" accleleratorKey="85" actionID="40602" actionTableID="7" />
-    <shortcut fVirt="27" accleleratorKey="72" actionID="64" actionTableID="1920373763" />
-    <shortcut fVirt="27" accleleratorKey="86" actionID="73" actionTableID="1920373763" />
-    <shortcut fVirt="15" accleleratorKey="190" actionID="50" actionTableID="1920373764" />
-    <shortcut fVirt="15" accleleratorKey="188" actionID="51" actionTableID="1920373764" />
-    <shortcut fVirt="7" accleleratorKey="87" actionID="52" actionTableID="1920373764" />
-    <shortcut fVirt="15" accleleratorKey="74" actionID="57" actionTableID="1920373764" />
     <shortcut fVirt="3" accleleratorKey="65" actionID="40500" actionTableID="369891408" />
     <shortcut fVirt="19" accleleratorKey="85" actionID="55571" actionTableID="369891408" />
     <shortcut fVirt="3" accleleratorKey="46" actionID="40058" actionTableID="369891408" />
@@ -575,6 +569,12 @@
     <shortcut fVirt="27" accleleratorKey="83" actionID="40006" actionTableID="1809145376" />
     <shortcut fVirt="27" accleleratorKey="86" actionID="40005" actionTableID="1809145376" />
     <shortcut fVirt="3" accleleratorKey="57" actionID="102" actionTableID="1195574973" />
+    <shortcut fVirt="27" accleleratorKey="72" actionID="64" actionTableID="1920373763" />
+    <shortcut fVirt="27" accleleratorKey="86" actionID="73" actionTableID="1920373763" />
+    <shortcut fVirt="15" accleleratorKey="190" actionID="50" actionTableID="1920373764" />
+    <shortcut fVirt="15" accleleratorKey="188" actionID="51" actionTableID="1920373764" />
+    <shortcut fVirt="7" accleleratorKey="87" actionID="52" actionTableID="1920373764" />
+    <shortcut fVirt="15" accleleratorKey="74" actionID="57" actionTableID="1920373764" />
     <shortcut fVirt="19" accleleratorKey="69" actionID="EPoly_Extrude_Along_Spline`Editable Polygon Object" actionTableID="647394" />
     <shortcut fVirt="11" accleleratorKey="77" actionID="EPoly_Meshsmooth`Editable Polygon Object" actionTableID="647394" />
     <shortcut fVirt="19" accleleratorKey="67" actionID="Coordsys_Local`Coordinate System" actionTableID="647394" />
@@ -587,7 +587,6 @@
     <shortcut fVirt="3" accleleratorKey="82" actionID="SmartScale`Tools" actionTableID="647394" />
     <shortcut fVirt="3" accleleratorKey="53" actionID="SubObject_5`Modifier Stack" actionTableID="647394" />
     <shortcut fVirt="3" accleleratorKey="48" actionID="BakeDialog`Render" actionTableID="647394" />
-    <shortcut fVirt="11" accleleratorKey="67" actionID="Camera_CreateFromView`Lights and Cameras" actionTableID="647394" />
     <shortcut fVirt="19" accleleratorKey="49" actionID="Custom_Attributes`Customize User Interface" actionTableID="647394" />
     <shortcut fVirt="11" accleleratorKey="49" actionID="TVCustom_Attributes`Track View" actionTableID="647394" />
     <shortcut fVirt="19" accleleratorKey="50" actionID="ParamCollectorShow`Parameter Collector" actionTableID="647394" />
@@ -613,7 +612,7 @@
     <shortcut fVirt="19" accleleratorKey="82" actionID="EPoly_Select_Ring`Editable Polygon Object" actionTableID="647394" />
     <shortcut fVirt="19" accleleratorKey="87" actionID="Coordsys_World`Coordinate System" actionTableID="647394" />
     <shortcut fVirt="3" accleleratorKey="192" actionID="LayerManager`Layers" actionTableID="647394" />
-    <shortcut fVirt="3" accleleratorKey="80" actionID="cometParent`Help Scripts" actionTableID="647394" />
-    <shortcut fVirt="7" accleleratorKey="66" actionID="BonesVisibilityFliper`Help Scripts" actionTableID="647394" />
+    <shortcut fVirt="7" accleleratorKey="66" actionID="BonesVisibilityFliper`WhaleKit Scripts" actionTableID="647394" />
+    <shortcut fVirt="3" accleleratorKey="80" actionID="cometParent`WhaleKit Scripts" actionTableID="647394" />
     <shortcut fVirt="3" accleleratorKey="86" actionID="Viewports" actionTableID="1261319018" />
 </ADSK_KBD>

@@ -15,17 +15,37 @@ function selectCrySkinBones = (
 	)catch()
 )
 
-function selectSkinBones = (
-	try(
+skinnedMeshesWithBones = #()
+
+function selectSkinBones meshObj = (
 	max modify mode 
-	skinMod = $.skin
+	select meshObj
+	skinMod = meshObj.skin
 	bonesListId = #()
+	meshAndBones = #()
+	append meshAndBones meshObj
 	bonesListNames = for i=1 to (skinOps.GetNumberBones skinMod) collect (skinOps.GetBoneName skinMod i 0)
 	bonesListId = for obj in bonesListNames collect getNodeByname(obj)
-	selectmore bonesLIstID
-	)catch()
+	for  bone_ in bonesLIstID do 
+		(
+			append meshAndBones bone_
+		)
+	
+	meshAndBones		
 )
 
-	selectSkinBones()
+ objList = for obj in (selection as array) collect obj
+
+for obj in objList do 
+	(
+		append skinnedMeshesWithBones (selectSkinBones obj)
+	)	
+
+max select none
+	
+for obj in skinnedMeshesWithBones do 
+	(
+		selectmore obj
+	)
 
 )

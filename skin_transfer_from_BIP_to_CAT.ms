@@ -3,14 +3,14 @@
 
 function createSkinHelpersList = (
 	try(
-	max modify mode 
+	max modify mode
 	skinMod = $.skin
 	bonesListNames = for i=1 to (skinOps.GetNumberBones skinMod) collect (skinOps.GetBoneName skinMod i 0)
 	bonesList = for obj in bonesListNames collect getNodeByname(obj)
 	skinOps.SaveEnvelope skinMod (MaxFilePath + "\\"+ $.name + "_weights.env")
 	bonesList
 	)catch()
-) 
+)
 
 /* function createCrySkinHelpersList = (
 	max modify mode 
@@ -67,6 +67,7 @@ function addBonesToSkin bipBonesList = (
 	try(
 	replaceSkinWithEmptySkin()
 	skinMod = $.skin
+	skinMod.bone_Limit = 4
 	for bone_ in bipBonesList do
 		(
 		skinOps.addbone skinMod bone_ 0

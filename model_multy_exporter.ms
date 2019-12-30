@@ -1,8 +1,8 @@
 exportClasses = exporterPlugin.classes
 
 -- source folder
---global projPath = "d:\\Animation\\WarFace\\nevada"
-global projPath = "d:\\Animation\\WarFace\\vehicles\\military"
+global projPath = "d:\\Animation\\WarFace\\vehicles\\"
+--global projPath = "d:\\Animation\\WarFace\\vehicles\\military"
 --folder for export, we will create export folder here like ..\A\B\export
 global exportPath = "D:\\Animation\\WarFace"
 global exportFolderName = "\\export"
@@ -151,12 +151,23 @@ fn recreateMultiMaterial obja =
                                             for i=1 to mata.materialList.count do
                                                            (
                                                                           submata = mata.materialList[i]
+																		  if submata.shaderType != 1 then
+																		  (
                                                                           submata.shadertype = 1 -- Shadertype 1 is Blinn ()
                                                                           submata.diffusemap = submata.bumpmap
+																		  )
                                                            )
                               )
+				if  mata != undefined and classof mata == Standardmaterial do
+				(
+					if mata.shaderType != 1 then 
+					(
+					mata.shadertype = 1
+					mata.diffusemap = mata.bumpmap
+					)
+				)
 			)catch ()
-)	
+)
 
 
 
@@ -206,5 +217,5 @@ exportFiles maxFilesPaths
 (
 	print "__"
 	print sourceDirsPaths[i]
-	print exportDirsPaths[i]
 	) */
+	print exportDirsPaths[i]
